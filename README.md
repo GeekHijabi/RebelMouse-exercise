@@ -9,3 +9,8 @@ Due to time and other constraints, the project is not pixel perfect, hence below
 - The header can be made functional in such a way that the search works and the links leads to a proper pages.
 - The page can be audited for performance and accessibility by converting it into a page secured by https.
 - Rather than random assets, the assets can be shared for getting accurate replica.
+
+### To run locally:
+- Clone the app.
+- Copy the path and paste in your favorite browser
+- The page will be displayed.
