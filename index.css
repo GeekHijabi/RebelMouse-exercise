@@ -91,32 +91,200 @@ a {
   color: yellowgreen;
 }
 
-.search { display: flex;}
+.search {
+  display: flex;
+}
 
-  .search-term {
-    width: 50%;
-  }
+.search-term {
+  width: 50%;
+}
 
-  .search-button {
-    width: 20%;
-    background: #E61F7E;
-    outline: none;
-    color: white;
-    font-weight: 300;
-    border-radius: 2px;
-  }
+.search-button {
+  width: 40%;
+  background: #E61F7E;
+  outline: none;
+  color: white;
+  font-weight: 300;
+  border-radius: 2px;
+}
 
-  .banner {
-    text-align: center;
-    background: #bfcc2d;
-    color: wheat;
-    text-transform: uppercase;
-    line-height: 2em;
-  }
+.banner {
+  text-align: center;
+  background: #bfcc2d;
+  color: wheat;
+  text-transform: uppercase;
+  line-height: 2em;
+}
 
-  .banner span {
-    color: lemonchiffon;
-  }
+.banner span {
+  color: lemonchiffon;
+}
+
+.content-desc {
+  height: 70em;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-image {
+  height: 52%;
+}
+
+.aligner-item {
+  width: 90%;
+  margin: 1.5em;
+}
+
+.order-button {
+  background-color: palevioletred;
+  color: white;
+  text-transform: uppercase;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  margin: auto;
+}
+
+#content-carousel {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+#thumbnail-carousel {
+  max-width: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #eaeaea;
+  padding: 10px 0;
+}
+
+#thumbnail-carousel .thumb {
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+#thumbnail-carousel .thumb:last-child {
+  margin-right: 0;
+}
+
+.thumb:hover {
+  cursor: pointer;
+}
+
+.thumb img {
+  opacity: 0.5;
+}
+
+.thumb img:hover {
+  opacity: 1;
+}
+
+.thumb.active img {
+  opacity: 1;
+  border: 1px solid #1d62b7;
+}
+
+.small-text {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 200;
+  font-family: "Lato", Sans-serif;
+}
+
+.small-text-bold {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: "Lato", Sans-serif;
+}
+
+.content-header {
+  margin-bottom: 25px;
+}
+
+.content-icon-area {
+  display: flex;
+}
+
+.content-icon-area span {
+  margin: auto auto 1rem 2rem;
+}
+
+#content-divider1,
+#content-divider2 {
+  margin: 0 0 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid black;
+}
+
+.content-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid gray;
+  border-radius: 2%;
+  padding: 1em;
+}
+
+.discount {
+  border: 1px;
+  border-radius: 5%;
+  background: orange;
+  width: 50px;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.colored-text {
+  color: orangered;
+}
+
+.small-text span {
+  text-decoration: line-through;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header .aside {
+  color: #E61F7E;
+}
+
+.content-date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+  margin-right: 3em;
+}
+
+.content-date-group {
+  display: flex;
+}
+
+.content-date .bold-date {
+  font-size: 33px;
+}
+
+.content-date .date {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
 
 @media (min-width: 768px) {
   .top-navigation {
@@ -180,7 +348,9 @@ a {
     text-transform: uppercase;
   }
 
-  .search { display: flex;}
+  .search {
+    display: flex;
+  }
 
   .search-term {
     width: 50%;
@@ -194,6 +364,59 @@ a {
     font-weight: 300;
     border-radius: 2px;
   }
-  
+
+  .content-text {
+    height: 20em;
+    margin: 3em;
+  }
+
+  .content-desc {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 40em;
+    width: 80%;
+  }
+
+  .col {
+    flex: 1;
+  }
+
+  .col-left {
+    order: -1;
+  }
+
+  .content-text {
+    display: flex;
+    margin: 2em;
+  }
+
+  .aligner-item {
+    width: 60%;
+
+  }
+
+  .col-image {
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+  }
+
+  .card-container {
+    flex-direction: row;
+  }
+
+  .amount-aside {
+    margin: auto 2em;
+  }
+
+  .content-date {
+    flex-wrap: nowrap;
+    margin-right: 0.8em;
+  }
+
+  .order-button {
+    margin-top: 1.5em;
+  }
 
 }
